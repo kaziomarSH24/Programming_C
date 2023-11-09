@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int arr[] = {10,8,23,53,15,13,25,14,32,11};
+    int arr[] = {1,2,3,4,5,7,8,6,10,9};
     int i,j,size;
     size = sizeof(arr)/sizeof(arr[0]);
     printf("The orginal array element are: \n");
@@ -9,10 +9,11 @@ int main(){
     {
         printf("arr[%d] = %d \n",i, arr[i]);
     }
-    int counter = 0;
+    int swap, counter = 0;
     for ( i = 0; i < size-1; i++)
     {
-        for ( j = 0; j < size-1; j++)
+        swap = 0;
+        for ( j = 0; j < size-1-i; j++)
         {
             counter++;
             if (arr[j] > arr[j+1])
@@ -20,9 +21,15 @@ int main(){
                 int temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
+                swap = 1;
             }
             
         }
+        if (swap == 0)
+        {
+            break;
+        }
+        
         
     }
     printf("\nAfter sorting: \n");
