@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int arr[] = {1,2,3,4,5,7,8,6,10,9};
+    int arr[] = {5,6,4,8,9,3,2,4,3,5};
     int i,j,size;
     size = sizeof(arr)/sizeof(arr[0]);
     printf("The orginal array element are: \n");

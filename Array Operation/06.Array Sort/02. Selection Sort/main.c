@@ -39,7 +39,8 @@ int main(){
     {
        scanf("%d",&a[i]);
     }
-
+    printf("The orginal array element are: ");
+    print(a,n); 
     selection(a,n);
     printf("\nAfter sorting: ");
     print(a,n);
