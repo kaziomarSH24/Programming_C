@@ -21,7 +21,7 @@ void print(int arr[], int n){
 
 int main(){
     int n,i;
-    printf("Enter the number of Array Index: ");
+    printf("Enter the Size of Array: ");
     scanf("%d",&n);
     
     int a[n];
@@ -32,7 +32,9 @@ int main(){
 
     printf("The orginal array element are: ");
     print(a,n); 
+
     insertion(a,n);
+    
     printf("\nAfter sorting: ");
     print(a,n);
 }

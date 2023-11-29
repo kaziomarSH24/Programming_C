@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void selection(int arr[], int n){
     int i,j, min_index;
     for ( i = 0; i < n-1; i++)
@@ -9,8 +8,7 @@ void selection(int arr[], int n){
         {
             if(arr[j] < arr[min_index]){
                 min_index = j;
-            }
-            
+            } 
         }
         int tamp = arr[i];
             arr[i] = arr[min_index];
@@ -18,7 +16,6 @@ void selection(int arr[], int n){
     }
     
 }
-
 void print(int arr[], int n){
 
     for (int i = 0; i < n; i++)
@@ -27,7 +24,6 @@ void print(int arr[], int n){
     }
     printf("\n\n");
 }
-
 int main(){
     int n;
     printf("Enter number size of array: ");
@@ -44,5 +40,5 @@ int main(){
     selection(a,n);
     printf("\nAfter sorting: ");
     print(a,n);
-    
+    return 0;
 }

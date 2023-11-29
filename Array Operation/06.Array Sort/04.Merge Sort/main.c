@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-
 int merge(int arr[], int left, int mid, int right){
 int i, j, k;
 int size_left, size_right;
+
 size_left = mid - left + 1;
 size_right = right - mid;  
-// printf("\n%d\n",1/2);
-// print(arr,10);
-// printf("sizel: %d /// sizer: %d\n", size_left, size_left);
+
 int l[size_left], r[size_right];
 
 for( i = 0; i < size_left; i++){
@@ -63,7 +61,9 @@ int main(){
     print(a,n); 
 
     mergeSort(a,0,n-1);
+    printf("\n========================================");
     printf("\nAfter sorting: ");
     print(a,n); 
-
+    printf("\n========================================");
+return 0;
 }
